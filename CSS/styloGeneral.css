@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+/*--------------------------------HEADER-----------------------------------*/
+.header{
+    margin:0;
+    background:#333 ;
+}
+
+[class*="col-"] {
+    float: left;
+    padding:5px 0 15px 0 ;
+}
+
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row{
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.button {
+    flex: 100%;
+    height:2rem;
+}
+
+.button ul li {
+    list-style-type:none;
+    width: 100%;
+    text-align: center;
+    border: 2px solid rgb(48, 46, 46);
+    background-color:black;
+    margin:0;
+}
+
+.button a{
+    font-family: Arial;
+    font-size: 12px;
+    text-decoration: none;
+    float: center;
+    padding: 5px;
+    color: rgb(236, 213, 213);
+}
+
+.button li:link{    
+    color:rgb(236, 213, 213);
+}
+
+.button li:hover{
+    color: #7c7777;
+    background-color:rgb(142, 180, 182);
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+.button a:visited{
+    color:rgb(236, 213, 213);
+}
+
+h1{
+    flex: 90%;
+    padding: 15px;
+}
+
+header i,h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: blanchedalmond;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+/*------------------------------HEADER-----------------------------*/
+
+
+footer {
+    text-align:center;
+    color: blanchedalmond;
+    background: #333;
+    height: 7rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+    padding-top: 0.7rem ;
+    font-size: 1rem;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a img{
+    padding-top: 0.5rem;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin-right:0.2rem ;
+}
+
+
+.Primera-fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1rem;
+}
+
+.logo-columna {
+    box-sizing: border-box;
+    flex:1%;
+}
+
+.nombre-logo {
+    width: 100%;
+    flex:75%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 0 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.7rem;
+}
+
+.Segunda-fila {
+    flex-direction: column;
+    margin: 10px 0 20px 0;
+    box-sizing: border-box
+}
+
+.derechos{
+    flex:24%;
+    text-align: left;
+    font-size: 0.6rem;
+}
+
+.redes-sociales {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+}
+
+.redes{
+    width: 20%;
+    margin: 0;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 0;
+    flex-direction: row;
+}
+
+ul.logos-redes {
+    max-width: none;
+    width: 30%;
+    justify-content:center;
+    display: flex;
+    flex-direction: row;
+}
+
+footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*para PC*/
+@media only screen and (min-width: 600px) {
+    .row{
+        flex-direction: row;
+    }
+    h1{
+        width: 70%;
+    }
+    .button{
+        width:30%;
+    }
+    .button ul{
+        float: left;
+    }
+    .button ul li {
+        display: inline;
+        border:0;
+        margin:0;
+        background-color: #333;
+        padding: 0.2rem;
+    }
+    .derechos{
+        font-size: 1rem;
+    }
+    [class*="col-"] {
+        padding-top:15px ;
+    }    
+}
+
+/*para TABLET*/
+@media only screen and (min-width: 500px) and (max-width: 599px) {  
+    .row{
+        flex-direction: column;
+    } 
+    .button,h1{
+        text-align: center;
+    }
+    .button ul li {
+        display: inline;
+        border:0;
+        margin:0;
+        padding: 0.2rem;
+        flex:50%;
+    }
+    .derechos{
+        font-size: 1rem;
+    }
+    [class*="col-"] {
+        padding-top:15px ; 
+    }   
+    .row::after {
+        display: table-row-group;
+    } 
+}
