@@ -235,7 +235,11 @@ ul.logos-redes {
     } 
     .button,h1{
         text-align: center;
+        
+    }
+    h1{
         margin-bottom:0.5rem;
+        margin-top:0.5rem;
     }
     .button ul li {
         display: inline;
