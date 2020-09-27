@@ -12,31 +12,8 @@ body{
     text-align: center;
 }
 
-.centrado{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 5rem;
-    color: rgb(21, 4, 116);
-}
-
-.centrado2{
-    position: absolute;
-    top: 20%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    font-size: 5rem;
-    color: #fcfcf8;
-}
-
-.centrado3{
-    position: absolute;
-    top: 30%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    font-size: 5rem;
-    color: #fcfcf8;
+.centrado,.centrado2,.centrado3{
+    display: none;
 }
 
 .descripcion{
@@ -88,4 +65,43 @@ h4{
 .videos{
     margin: 0 0.5rem 0 0.5rem;
     text-align: center;
+}
+
+
+@media only screen and (min-width: 700px) {
+    .centrado{
+        display: inline;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5rem;
+        color: rgb(21, 4, 116);
+    }
+    
+    .centrado2{
+        display: inline;
+        position: absolute;
+        top: 20%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        font-size: 5rem;
+        color: #fcfcf8;
+    }
+    
+    .centrado3{
+        display: inline;
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        font-size: 5rem;
+        color: #fcfcf8;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 599px) {  
+    .centrado,.centrado2,.centrado3{
+        display: none;
+    }
 }
